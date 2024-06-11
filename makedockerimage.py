@@ -28,3 +28,4 @@ docker login
 
 docker tag myapp:latest myregistry.com/myapp:latest
 docker push myregistry.com/myapp:latest
+docker run -d -p 80:8080 <Your-dockerhub username>/myapp:latest
