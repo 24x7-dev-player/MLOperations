@@ -16,8 +16,6 @@ resource "aws_instance" "ml_instance" {
   }
 }
 
-
-
 # Bash Script
 #!/bin/bash
 # Create and activate a virtual environment
