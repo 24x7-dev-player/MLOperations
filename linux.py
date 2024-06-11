@@ -69,4 +69,72 @@ ifconfig_command = "ifconfig"      # Configure network interfaces (deprecated)
 ip_command = "ip"                  # Show/manipulate routing, devices, policy routing
 
 # Tools
-ping_command = "ping"              # Send ICMP ECHO
+ping_command = "ping"              # Send ICMP ECHO_REQUEST to network hosts
+netstat_command = "netstat"        # Network statistics
+ssh_command = "ssh"                # OpenSSH SSH client (remote login program)
+
+# Shell Scripting
+
+# Example Script Structure
+shebang = "#!/bin/bash"            # Shebang line for bash scripts
+comment = "# This is a comment"    # Single line comment
+
+# Variables
+variable_assignment = "VAR_NAME=value"  # Assign a value to a variable
+variable_access = "$VAR_NAME"           # Access the value of a variable
+
+# Control Structures
+if_structure = """
+if [ condition ]; then
+    # Commands
+fi
+"""
+
+for_loop = """
+for VAR in list; do
+    # Commands
+done
+"""
+
+while_loop = """
+while [ condition ]; do
+    # Commands
+done
+"""
+
+# Functions
+function_definition = """
+function_name () {
+    # Commands
+}
+"""
+
+# Security Commands
+
+# Firewall
+iptables_command = "sudo iptables"  # Configure IP packet filter rules
+ufw_command = "sudo ufw"            # Uncomplicated Firewall
+
+# SELinux
+selinux_command = "sestatus"        # Check SELinux status
+
+# System Monitoring
+
+# Log Files
+log_directory = "/var/log"          # Directory containing log files
+tail_command = "tail"               # View the end of a file
+cat_command = "cat"                 # Concatenate and display files
+less_command = "less"               # View file contents one screen at a time
+
+# Monitoring Tools
+htop_command = "htop"               # Interactive process viewer
+vmstat_command = "vmstat"           # Report virtual memory statistics
+
+# Example usage in Python (Note: These commands need to be run in a shell environment)
+import os
+
+# Running a basic command
+os.system(ls_command)
+
+# Example: Listing home directory contents
+os.system(f"{ls_command} {home_directory}")
