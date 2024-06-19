@@ -81,8 +81,3 @@ os.makedirs(data_path)
 
 train_processed_data.to_csv(os.path.join(data_path,"train_processed.csv"))
 test_processed_data.to_csv(os.path.join(data_path,"test_processed.csv"))
-
-
-# dev stage add -n data_preprocessing -d src/data_preprocessing.py -o data/preprocessing python src/data_preprocessing.py
-# dvc dag
-# dvc repro

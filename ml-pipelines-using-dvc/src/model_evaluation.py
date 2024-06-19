@@ -31,5 +31,3 @@ metrics_dict={
 
 with open('metrics.json', 'w') as file:
     json.dump(metrics_dict, file, indent=4)
-    
-# dvc stage add -n model_evaluation -d src/model_evaluation.py -d model.pkl --metric metric.json python src/model_evaluation.py

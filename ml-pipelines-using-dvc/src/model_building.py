@@ -17,5 +17,3 @@ clf.fit(X_train, y_train)
 
 # save
 pickle.dump(clf, open('model.pkl','wb'))
-
-# dvc stage add -n model_building -d src/model_building.py -s data/feature -o model.pkl python src/model_building.py

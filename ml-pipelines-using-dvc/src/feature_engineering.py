@@ -43,5 +43,3 @@ os.makedirs(data_path)
 
 train_df.to_csv(os.path.join(data_path,"train_bow.csv"))
 test_df.to_csv(os.path.join(data_path,"test_bow.csv"))
-
-# dvc stage add -n feature_engineering -d src/feature_engineering.py -d data/preprocess -o data/feature python src/feature-engineering.py
